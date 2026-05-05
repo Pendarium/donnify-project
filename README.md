@@ -1,12 +1,10 @@
 <div align="center" style="background-color:#d9d9d9; padding:10px; border-radius:32px;">
   <img src="./readme_assets/logo-donnify.svg" width="85"/>
 
-  <h1 style="color:black; margin-top:10px;">
-    DONNIFY PROJECT
-  </h1>
+  # DONNIFY PROJECT
 </div>
 
-<div style="height:20px;"></div>
+<br>
 
 <div align="center">
   <img src="./readme_assets/Team_pres.png"/>
