@@ -1,14 +1,4 @@
-<div align="center" style="background-color:#d9d9d9; padding:10px; border-radius:32px;">
-  <img src="./readme_assets/logo-donnify.svg" width="85"/>
-
-  # DONNIFY PROJECT
-</div>
-
-<br>
-
-<div align="center">
-  <img src="./readme_assets/Team_pres.png"/>
-</div>
+![Team presentation](./readme_assets/Team_pres.png)
 
 ***
 # Table of Contents
@@ -31,6 +21,14 @@
     - [SMART Objectives Detailed by MVP](#smart-objectives-detailed-by-mvp)
     - [High-Level Project Timeline](#high-level-project-timeline)
     - [Conclusion](#conclusion)
+3. [Technical Documentation](#3-technical-documentation)
+    - [User Stories and Mockups](#user-stories-and-mockups)
+    - [System Architecture](#system-architecture)
+    - [Components, Classes, and Database Design](#components-classes-and-database-design)
+    - [High-Level Sequence Diagrams](#high-level-sequence-diagrams)
+    - [External and Internal APIs Documentation](#external-and-internal-apis-documentation)
+    - [Plan SCM and QA Strategies](#plan-scm-and-qa-strategies)
+
 ***
 # 1. Brainstorming and MVP
 ## Project Overview
@@ -171,3 +169,68 @@ Create an intuitive web and mobile interface with clear navigation and a quick q
 The Donnify project aims to create a web and mobile platform that allows users to easily discover and contribute to local charitable organizations, while incorporating a playful element to encourage donations. Users can quickly identify where to go, what types of donations are expected, and how to access the organizations through a clear and intuitive interface.
 The project is built on a well-structured plan: SMART objectives, defined scope, and a targeted MVP, including the organization directory, interactive map, basic user profile, gamification, and a simple interface. Each stage—from planning to launch—ensures an efficient and organized deployment.
 Donify combines innovation, accessibility, and civic engagement, offering organizations greater visibility and users a simple, fun, and responsible way to contribute, while laying the foundation for future enhancements.
+# 3. Technical Documentation
+## User Stories and Mockups
+### Types of Users :
+- Users : Searches for charitable organizations, reviews their needs, tracks their donations and rewards, and customizes their profile.
+- Associations : Verifies and validates received donations, and evaluates donors when it comes to time-based donations.
+- Administrators : Certifies association accounts by applying a ‘certified’ badge and ensures the moderation of users and associations.
+
+### User Stories :
+| ID | Users Stories | Priority |
+|----------|----------|----------|
+|User Stories 1|As a user, I want to be able to create an account.|Must Have|
+|User Stories 2|As a user, I want to be able to access my profile to manage my donations and rewards.|Must Have|
+|User Stories 3|As a user, I want to access the interactive map that locates me so I can find nearby associations.|Must Have|
+|User Stories 4|As a user, I want to receive cosmetic rewards for my donations in order to personalize my profile.|Must Have|
+|User Stories 5|As a user, I want to see the donation leaderboard so I can compare my contribution with other profiles.|Should Have|
+|User Stories 6|As a user, I want to be able to personalize my profile with the premium rewards linked to the leaderboard.|Could Have|
+|User Stories 7|As an association, I want to validate received donations to ensure their compliance.|Must Have|
+|User Stories 8|As an association, I want to give non-customizable feedback on a donor for a time donation to reflect their participation and reliability.|Should Have|
+|User Stories 9|As an administrator, I want to manually certify association accounts that do not meet the automatic certification criteria to ensure their legitimacy.|Must Have|
+|User Stories 10|As an administrator, I want to moderate users and associations to prevent any misconduct or inappropriate behavior.|Must Have|
+### Justification of Prioritization :
+- Must Have: Essential features for the MVP (account creation, viewing organizations, interactive map, donation validation, rewards tracking, association certification, moderation).
+- Should Have: Features that enhance user experience and motivation (donor leaderboard, association feedback, premium rewards linked to the leaderboard).
+- Could Have: User profile customization via premium rewards.
+### Mockups (User Interface) :
+The MVP includes both a web and mobile interface. Mockups have been created to visualize the main screens.
+#### Main Screens:
+##### Login / Sign-up Page :
+- Fields: email, password (optional for association accounts: RNA number, association name)
+- Buttons: Log In, Sign Up
+##### Organizations Directory :
+- List of the 3 nearest organizations with name, types of donations, and address
+- Access to the interactive map
+##### Interactive Map :
+- Organization locations
+- Ability to click on an organization to view its details
+- Directions indication
+##### User Profile :
+- View of earned rewards
+- Ability to personalize the profile
+- Non-customizable feedback left by associations after time donations
+##### Donor Leaderboard :
+- Top 10 donors
+##### Association Page :
+- Validation of received donations
+- Non-customizable evaluation of donors for time donations
+##### Administrator Page :
+- Certification of association accounts
+- Moderation of users and associations
+#### User Stories – Mockups Mapping :
+|Mockup / Page|User Stories|Priority|
+|----------|----------|----------|
+|Login / Sign-up Page|Users stories 1|Must Have|
+|Organizations Directory|Users stories 3|Must Have|
+|Interactive Map|Users stories 3|Must Have|
+|User Profile|Users stories 2 / 4 / 6|Must Have / Could Have|
+|Donor Leaderboard|Users stories 5|Should Have|
+|Association Page|Users stories 7 / 8|Must Have / Should Have|
+|Administrator Page|Users stories 9 / 10|Must Have|
+## System Architecture
+![Architecture diagram](./readme_assets/architectur_diagram.png)
+## Components, Classes, and Database Design
+## High-Level Sequence Diagrams
+## External and Internal APIs Documentation
+## Plan SCM and QA Strategies
